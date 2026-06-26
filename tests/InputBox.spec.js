@@ -16,6 +16,5 @@ test('Input Box', async ({page}) => {
     await expect.soft(InputBox).toHaveValue("Diwakar Singh Thakur");
     await expect.soft(page.locator("#input-password")).toHaveValue("Test@123");
 
-    await page.waitForTimeout(5000)
     await page.close();
 } )

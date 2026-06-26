@@ -31,6 +31,5 @@ test('Checkbox',async ({page})=>{
         await expect.soft(await checkbox.isChecked()).toBeFalsy();
         }
     }
-    await page.waitForTimeout(5000);
     await page.close();
 })
